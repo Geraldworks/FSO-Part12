@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/statistics", async (_, res) => {
-  const addedTodos = await getAsync("added_todos") || 0;
+  const addedTodos = (await getAsync("added_todos")) || 0;
 
   res.json({ added_todos: Number(addedTodos) });
 });
