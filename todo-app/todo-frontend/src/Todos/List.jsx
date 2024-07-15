@@ -11,8 +11,6 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
     completeTodo(todo);
   };
 
-  console.log(todos)
-
   return (
     <>
       {todos
